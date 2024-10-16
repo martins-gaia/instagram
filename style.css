@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background: #254;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.insta-logo {
+    margin-bottom: 20px;
+
+
+}
+
+.container-imagens {
+    position: relative;
+
+}
+
+.img-celular {
+    width: 350px;
+
+}
+
+.imagem-celular {
+    height: 411px;
+    bottom: 51px;
+    position: absolute;
+    left: 117px;
+    transition: opacity 2s ease-in-out;
+
+
+}
+
+.Container-items {
+    width: 250px;
+
+}
+
+.Container-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(80, 85, 34);
+    background: #799b82;
+    padding: 50px 40px 20px 40px;
+
+}
+
+input {
+    height: 36px;
+    outline: none;
+    border: 1px solid #e28989;
+    border-radius: 5px;
+    padding-left: 4px;
+    margin-top: 5px;
+
+
+}
+
+button {
+    background: #254;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #ffff;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.4;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+}
+
+.logi-facebook {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.esqueceu-senha {
+    color: blue;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Container-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    border: 1px solid rgb(80, 85, 34);
+    padding: 20px 0px 20px 0px;
+
+    span {
+        color: blue;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+
+p {
+    font-size: 14px;
+
+}
+
+.paragrafo-app {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+
+}
+
+.Container-app {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-app {
+    width: 150px;
+
+}
+
+
+/* Media queries para telas menores */
+
+@media (max-width: 740px) {
+    .img-celular {
+        width: 300px;
+    }
+    
+    /* .imagem-celular {
+        left: 90px;
+        height: 370px;
+        width: 300px;
+    }
+     */
+    .imagem-celular {
+        left: 97px;
+        height: 346px;
+        width: 167px;
+    }
+    .Container-items {
+        width: 220px;
+    }
+    
+    .Container-form {
+        padding: 40px 30px 20px 30px;
+    }
+
+    .logo-app {
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-celular {
+        width: 250px;
+    }
+    
+    /* .imagem-celular {
+        left: 60px;
+        height: 320px;
+        width: 250px;
+    } */
+
+    .imagem-celular {
+        left: 82px;
+        height: 294px;
+        width: 137px;
+        bottom: 39px;
+    }
+    .Container-items {
+        width: 180px;
+    }
+    
+    .Container-form {
+        padding: 30px 20px 15px 20px;
+    }
+
+    .logo-app {
+        width: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    .img-celular {
+        width: 200px;
+    }
+    
+    .imagem-celular {
+        left: 40px;
+        height: 280px;
+        width: 200px;
+    }
+    
+    .imagem-celular {
+        left: 66px;
+        height: 233px;
+        width: 107px;
+        bottom: 32px;
+    }
+    .Container-items {
+        width: 160px;
+    }
+    
+    .Container-form {
+        padding: 20px 15px 10px 15px;
+    }
+
+    .logo-app {
+        width: 80px;
+    }
+}

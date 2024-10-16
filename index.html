@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="container-imagens">
+        <img src="./img/celular.png" alt="imagem de um celular" class="img-celular">
+        <img src="./img/insta1.png" alt="" class="imagem-celular">
+        <img src="./img/insta2.png" alt="" class="imagem-celular" id="troca imagem">
+    </div>
+
+    <div class="Container-items">
+        <div class="Container-form">
+            <img class="insta-logo" src="./img/insta-logo.png" alt="logo do instagram">
+
+            <input placeholder="Telefone, nome de usuário ou e-mail">
+            <input placeholder="Senha">
+
+            <button>Entrar</button>
+
+            <a class="logi-facebook">Entrar com o Facebook</a>
+            <a class="esqueceu-senha">Esqueceu a senha?</a>
+
+        </div>
+        <div class="Container-cadastro">
+            <p>Não tem uma conta?</p><span><a>clik aqui</a></span>
+        </div>
+        <p class="paragrafo-app">Obtenha o app</p>
+        <div class="Container-app">
+            <img src="./img/google.webp" alt="image do play store" class="logo-app">
+            <img src="./img/logotipo-da-apple.png" alt="logo da apple" class="logo-app">
+        </div>
+    </div>
+</body>
+<script>
+const imagem = document.getElementById("troca imagem");
+
+function trocaImagem() {
+    // Verifica a opacidade atual
+    if (imagem.style.opacity == "0") {
+       
+        imagem.style.opacity = "1";
+    } else {
+        // Caso contrário, define para 0 (imagem invisível)
+        imagem.style.opacity = "0";
+    }
+}
+
+// Define a opacidade inicial da imagem
+imagem.style.opacity = "1";
+
+// Alterna a opacidade a cada 2 segundos
+setInterval(() => {
+    trocaImagem();
+}, 2000);
+
+
+</script>
+</html>
+
+
